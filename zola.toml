@@ -33,6 +33,10 @@ accent_color_dark = "#93cee9"
 default_theme = "dark"
 
 search = true
+show_reading_time = true
+show_share_button = true
+show_backlinks = true
+toc = true
 scripts = ["jalali-dates.js"]
 
 source_url = "https://github.com/kdefarsi/kdefarsi.github.io"
