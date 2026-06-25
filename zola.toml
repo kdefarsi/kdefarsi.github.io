@@ -40,7 +40,7 @@ source_url = "https://github.com/kdefarsi/kdefarsi.github.io"
 [extra.nav]
 auto_hide = false
 show_theme_switcher = true
-show_feed = true
+show_feed = false
 show_repo = true
 
 [[extra.nav.links]]
