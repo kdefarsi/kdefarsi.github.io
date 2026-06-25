@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+{%- set rel_attributes = macros_rel_attributes::rel_attributes() | trim -%}
+<picture>
+	<source srcset="{{ get_url(path='404.png') }}" media="(prefers-reduced-motion: reduce)"></source>
+	<img id="not-found" class="pixels transparent no-hover" alt="۴۰۴" {%- if config.markdown.lazy_async_image -%}decoding="async" loading="lazy"{%- endif -%} src="{{ get_url(path='404.gif') }}">
+</picture>
+
+<h1>صفحه پیدا نشد</h1>
+
+<p>صفحه مورد نظر یافت نشد.{% if config.extra.issues_url %} اگر فکر می‌کنید این مشکل طبیعی نیست، می‌توانید یک گزارش در سیستم پیگیری مشکلات ایجاد کنید.{% endif %}</p>
+
+<div class="buttons">
+	<a href="{{ get_url(path='/', lang=lang) }}">برو به خانه</a>
+	{%- if config.extra.issues_url %}
+		<a class="colored external" href="{{ config.extra.issues_url }}" rel="{{ rel_attributes }}">گزارش مشکل</a>
+	{%- endif %}
+</div>
+{% endblock content %}
