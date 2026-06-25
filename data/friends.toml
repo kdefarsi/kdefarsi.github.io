@@ -1,0 +1,64 @@
+[[group]]
+name = "جامعه کی‌دی‌ای"
+desc = "سایت‌های رسمی و جوامع"
+
+[[group.links]]
+name = "KDE.org"
+url = "https://kde.org"
+avatar = "https://kde.org/favicon.ico"
+bio = "سایت رسمی پروژه کی‌دی‌ای"
+
+[[group.links]]
+name = "KDE Store"
+url = "https://store.kde.org"
+avatar = "https://store.kde.org/favicon.ico"
+bio = "فروشگاه محتوای کی‌دی‌ای"
+
+[[group.links]]
+name = "KDE Discuss"
+url = "https://discuss.kde.org"
+avatar = "https://discuss.kde.org/favicon.ico"
+bio = "انجمن گفتگوی کی‌دی‌ای"
+
+[[group.links]]
+name = "KDE Invent"
+url = "https://invent.kde.org"
+avatar = "https://invent.kde.org/favicon.ico"
+bio = "میزبان کدهای پروژه کی‌دی‌ای"
+
+[[group]]
+name = "منابع آموزشی"
+desc = "سایت‌های آموزشی و مستندات"
+
+[[group.links]]
+name = "KDE Wiki"
+url = "https://userbase.kde.org"
+avatar = "https://userbase.kde.org/favicon.ico"
+bio = "ویکی کاربران کی‌دی‌ای"
+
+[[group.links]]
+name = "KDE Developer"
+url = "https://develop.kde.org"
+avatar = "https://develop.kde.org/favicon.ico"
+bio = "مستندات توسعه کی‌دی‌ای"
+
+[[group.links]]
+name = "Plasma Desktop"
+url = "https://kde.org/plasma-desktop"
+avatar = "https://kde.org/favicon.ico"
+bio = "محیط میزکار پلاسما"
+
+[[group]]
+name = "جامعه فارسی"
+desc = "سایت‌های فارسی مرتبط"
+
+[[group.links]]
+name = "گیت‌هاب انجمن"
+url = "https://github.com/kdefa"
+avatar = "https://github.githubassets.com/favicons/favicon.svg"
+bio = "مخزن گیت‌هاب انجمن کی‌دی‌ای فارسی"
+
+[[group.links]]
+name = "KDE Farsi"
+url = "https://kdefa.github.io"
+bio = "وبسایت انجمن کی‌دی‌ای فارسی"

@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="archive-page">
+
+    <header class="archive-page-header">
+        <h1 class="archive-page-title">
+            {{ macros_translate::translate(
+                key="archive_title",
+                default="Archive" | capitalize,
+                language_strings=language_strings
+            ) }}
+        </h1>
+
+        {% set section = get_section(path="blog/_index.md") %}
+        <p class="archive-page-subtitle">
+            {{ macros_translate::translate(
+                key='posts',
+                number=section.pages | length,
+                default='$NUMBER posts in total',
+                language_strings=language_strings
+            ) }}
+        </p>
+    </header>
+
+    <div class="timeline">
+        {% set posts = section.pages | sort(attribute="date") | reverse %}
+
+        {% for year, items in posts | group_by(attribute="year") %}
+        <section class="timeline-group">
+
+            <!-- 年份 -->
+            <div class="timeline-row timeline-row--year">
+                <div class="timeline-axis">
+                    <span class="timeline-dot timeline-dot--year"></span>
+                </div>
+                <h2 class="timeline-year" data-year="{{ year }}">{{ year }}</h2>
+            </div>
+
+            <!-- 文章 -->
+            {% for post in items %}
+            <a href="{{ post.permalink }}" class="timeline-row timeline-row--post">
+                <div class="timeline-axis">
+                    <span class="timeline-dot timeline-dot--post"></span>
+                </div>
+
+                <time class="timeline-date" datetime="{{ post.date | date(format=' %+') }}">
+                    {{ post.date | date(format="%m-%d") }}
+                </time>
+
+                <span class="timeline-title">
+                    {{ post.title }}
+                </span>
+            </a>
+            {% endfor %}
+
+        </section>
+        {% endfor %}
+    </div>
+
+</div>
+{% endblock content %}

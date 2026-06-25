@@ -1,0 +1,100 @@
+# The URL the site will be built for
+base_url = "https://kdefarsi.github.io"
+
+# Whether to automatically compile all Sass files in the sass directory
+theme = "xuan"
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+title = "جامعه کی‌دی‌ای فارسی"
+description = "جامعه کاربران و توسعه‌دهندگان کی‌دی‌ای فارسی زبان"
+default_language = "fa"
+
+generate_feeds = true
+feed_filenames = ["atom.xml"]
+
+[markdown]
+
+[markdown.highlighting]
+theme = "catppuccin-mocha"
+
+[[taxonomies]]
+name = "tags"
+feed = true
+
+[extra]
+# Put all your custom variables here
+
+accent_color = "#3daee9"
+accent_color_dark = "#93cee9"
+
+default_theme = "dark"
+
+search = true
+scripts = ["jalali-dates.js"]
+
+source_url = "https://github.com/kdefarsi/kdefarsi.github.io"
+
+[extra.nav]
+auto_hide = false
+show_theme_switcher = true
+show_feed = true
+show_repo = true
+
+[[extra.nav.links]]
+name = "Blog"
+url = "blog"
+
+[[extra.nav.links]]
+name = "Archive"
+url = "archive"
+
+[[extra.nav.links]]
+name = "Tags"
+url = "tags"
+
+[[extra.nav.links]]
+name = "About"
+url = "about"
+
+[[extra.nav.links]]
+name = "Links"
+url = "links"
+
+[extra.footer]
+show_copyright = true
+show_powered_by = true
+show_source = true
+copyright = """
+&copy; جامعه کی‌دی‌ای فارسی
+
+محتوای این وبسایت تحت مجوز [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fa) منتشر می‌شود.
+"""
+
+[[extra.footer.links]]
+name = "Blog"
+url = "blog"
+
+[[extra.footer.links]]
+name = "Archive"
+url = "archive"
+
+[[extra.footer.links]]
+name = "About"
+url = "about"
+
+[[extra.footer.links]]
+name = "Links"
+url = "links"
+
+[[extra.footer.socials]]
+name = "GitHub"
+url = "https://github.com/kdefarsi"
+icon = "%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12'/%3E%3C/svg%3E"
+
+[[extra.footer.socials]]
+name = "Mastodon"
+url = "https://fosstodon.org/@kde"
+icon = "%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M23.268 5.313C23.268 2.432 20.956.078 18.125.078H5.894C3.064.078.751 2.432.751 5.313v14.062c0 2.881 2.313 5.236 5.143 5.236h8.277V12.23h-2.797v5.856h-2.328V7.616c0-1.288-.885-2.323-2.184-2.323-1.298 0-2.184 1.035-2.184 2.323v5.856H5.05V7.616c0-2.576 1.73-4.489 4.296-4.489 1.58 0 2.461.936 3.05 1.871l.589.934.588-.934c.589-.935 1.47-1.871 3.05-1.871 2.566 0 4.297 1.913 4.297 4.489v5.856h-2.797V7.616c0-1.288-.886-2.323-2.185-2.323-1.298 0-2.184 1.035-2.184 2.323v2.875l-.05-1.644v-1.23c0-1.288-.886-2.323-2.185-2.323' fill='%23636b74'/%3E%3C/svg%3E"
